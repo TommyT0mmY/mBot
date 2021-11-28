@@ -20,6 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="opencv_world454d.dll" />
   </ItemGroup>
 </Project>

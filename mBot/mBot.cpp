@@ -21,12 +21,12 @@ int main(int argc, char** argv)
     namedWindow("Control"); //create a window called "Control"
 
     int iLowH = 0;
-    int iHighH = 179;
+    int iHighH = 104;
 
-    int iLowS = 0;
-    int iHighS = 255;
+    int iLowS = 61;
+    int iHighS = 191;
 
-    int iLowV = 0;
+    int iLowV = 219;
     int iHighV = 255;
 
     //Create trackbars in "Control" window
@@ -61,11 +61,11 @@ int main(int argc, char** argv)
 
         //morphological opening (remove small objects from the foreground)
         erode(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
-        dilate(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
+        //dilate(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
 
         //morphological closing (fill small holes in the foreground)
-        dilate(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
-        erode(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
+        //dilate(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
+        //erode(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
 
         imshow("Thresholded Image", imgThresholded); //show the thresholded image
         imshow("Original", imgOriginal); //show the original image

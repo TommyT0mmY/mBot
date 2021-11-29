@@ -72,23 +72,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>c:\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>c:\opencv\build\x64\vc15\lib;c:\opencv\build\x64\vc15\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(OPENCV_DIR)\..\..\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OPENCV_DIR)\lib;$(OPENCV_DIR)\bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>c:\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>c:\opencv\build\x64\vc15\lib;c:\opencv\build\x64\vc15\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(OPENCV_DIR)\..\..\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OPENCV_DIR)\lib;$(OPENCV_DIR)\bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>c:\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>c:\opencv\build\x64\vc15\lib;c:\opencv\build\x64\vc15\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(OPENCV_DIR)\..\..\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OPENCV_DIR)\lib;$(OPENCV_DIR)\bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>c:\opencv\build\include;$(IncludePath)</IncludePath>
-    <LibraryPath>c:\opencv\build\x64\vc15\lib;c:\opencv\build\x64\vc15\bin;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(OPENCV_DIR)\..\..\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(OPENCV_DIR)\lib;$(OPENCV_DIR)\bin;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -152,9 +152,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="mBot.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="opencv_world454d.dll" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

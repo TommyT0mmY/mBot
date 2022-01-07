@@ -3,6 +3,7 @@
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc.hpp>
+#include <opencv2/objdetect.hpp>
 #include <iostream>
 
 using namespace cv;
@@ -64,7 +65,7 @@ int main(int argc, char** argv)
 		// immagine imgHSV con valori booleani se il valore è tra i valori min e max
 		Mat imgThresholded;
 
-		
+
 
 		bool bSuccess = cap.read(imgCapture); // read a new frame from video
 
@@ -74,7 +75,21 @@ int main(int argc, char** argv)
 			break;
 		}
 
-		
+		//qrcode
+
+		QRCodeDetector detector;
+
+		vector<Point> punti;
+
+		detector.detectMulti(imgCapture, punti);
+
+		for (int i = 0; i < punti.size(); i++) {
+			//for (int j = 0; j < punti[i].size(); j++) {
+			circle(imgCapture, punti[i], 10, { 255,0,0 });
+
+		}
+
+		//warp
 		float w = 250;
 		float h = 250;
 

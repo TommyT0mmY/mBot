@@ -85,10 +85,18 @@ int main(int argc, char** argv)
 
 		for (int i = 0; i < punti.size(); i++) {
 			//for (int j = 0; j < punti[i].size(); j++) {
-			circle(imgCapture, punti[i], 10, { 255,0,0 });
+			circle(imgCapture, punti[i], 10, { 0,255,0 },-1);
 
 		}
 
+		vector<string> qrcode_infos;
+		if (punti.size() > 0) {
+			if (detector.decodeMulti(imgCapture, punti, qrcode_infos)) {
+				for (auto s : qrcode_infos) {
+					cout << s << endl;
+				}
+			}
+		}
 		//warp
 		float w = 250;
 		float h = 250;

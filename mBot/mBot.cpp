@@ -8,6 +8,13 @@
 using namespace cv;
 using namespace std;
 
+//TODO
+//QRCODE
+//trovare i min max corretti
+//ball detection
+//
+
+
 int main(int argc, char** argv)
 {
 	VideoCapture cap(0); //capture the video from web cam
@@ -42,10 +49,24 @@ int main(int argc, char** argv)
 
 	while (true)
 	{
-		Mat imgOriginal;
+		// immagine della webcam
+		Mat imgCapture;
 
+		// matrice per il warp dell'immagine
+		Mat matrix;
 
-		bool bSuccess = cap.read(imgOriginal); // read a new frame from video
+		// immagine normalizzata
+		Mat imgWarp;
+
+		// immagine in formato HSV
+		Mat imgHSV;
+
+		// immagine imgHSV con valori booleani se il valore è tra i valori min e max
+		Mat imgThresholded;
+
+		
+
+		bool bSuccess = cap.read(imgCapture); // read a new frame from video
 
 		if (!bSuccess) //if not success, break loop
 		{
@@ -53,11 +74,10 @@ int main(int argc, char** argv)
 			break;
 		}
 
+		
 		float w = 250;
 		float h = 250;
 
-		Mat matrix;
-		Mat imgWarp;
 
 		//i punti nell'immagine
 		Point2f src[4] = { {100,100},{100,200},{300,50},{300,250} };
@@ -65,28 +85,16 @@ int main(int argc, char** argv)
 		Point2f dst[4] = { {0.0f,0.0f},{w,0.0f},{0.0f,h},{w,h} };
 
 		matrix = getPerspectiveTransform(src, dst);
-		warpPerspective(imgOriginal, imgWarp, matrix, Point(w, h));
+		warpPerspective(imgCapture, imgWarp, matrix, Point(w, h));
 
 		imshow("image", imgWarp);
 
-		Mat imgHSV;
-
-		cvtColor(imgOriginal, imgHSV, COLOR_BGR2HSV); //Convert the captured frame from BGR to HSV
-
-		Mat imgThresholded;
+		cvtColor(imgCapture, imgHSV, COLOR_BGR2HSV); //Convert the captured frame from BGR to HSV
 
 		inRange(imgHSV, Scalar(iLowH, iLowS, iLowV), Scalar(iHighH, iHighS, iHighV), imgThresholded); //Threshold the image
 
-		//morphological opening (remove small objects from the foreground)
-		erode(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
-		//dilate(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
-
-		//morphological closing (fill small holes in the foreground)
-		//dilate(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
-		//erode(imgThresholded, imgThresholded, getStructuringElement(MORPH_ELLIPSE, Size(5, 5)));
-
 		imshow("Thresholded Image", imgThresholded); //show the thresholded image
-		imshow("Original", imgOriginal); //show the original image
+		imshow("Original", imgCapture); //show the original image
 
 		if (waitKey(30) == 27) //wait for 'esc' key press for 30ms. If 'esc' key is pressed, break loop
 		{

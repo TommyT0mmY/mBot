@@ -1,13 +1,20 @@
 #pragma once
 
+#include "Ball.h"
 #include <opencv2/core/core.hpp>
 
 /// <summary>
 /// Handles the game field
 /// </summary>
 class Field {
+protected:
+	/// <summary>
+	/// Normalized image of the field
+	/// Normalized using <see cref="projectionMatrix"/>
+	/// </summary>
+	cv::Mat fieldImage;
 
-
+private:
 	/// <summary>
 	/// Four <see cref="cv::Point"/>
 	/// </summary>
@@ -17,6 +24,7 @@ class Field {
 		cv::Point p3; // bottom left
 		cv::Point p4; // bottom right
 	};
+
 
 	/// <summary>
 	/// Holds the raw videocapture corner coordinates of the field
@@ -28,13 +36,8 @@ class Field {
 	/// Projection matrix to normalize the videocapture image
 	/// </summary>
 	cv::Mat projectionMatrix;
-	
-	
-	/// <summary>
-	/// Normalized image of the field
-	/// Normalized using <see cref="projectionMatrix"/>
-	/// </summary>
-	cv::Mat fieldImage;
+
+	Ball ball;
 
 
 	/// <summary>

@@ -5,6 +5,8 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/objdetect.hpp>
 #include <iostream>
+#include "Field.h"
+#include "BallDetector.h"
 
 using namespace cv;
 using namespace std;
@@ -26,6 +28,12 @@ int main(int argc, char** argv)
 		return -1;
 	}
 
+	Field field;
+
+	BallDetector ballDetector;
+
+	field.addDetector(&ballDetector);
+
 	while (true)
 	{
 		// immagine della webcam
@@ -38,6 +46,9 @@ int main(int argc, char** argv)
 			cout << "Cannot read a frame from video stream" << endl;
 			break;
 		}
+
+		field.update();
+
 		imshow("Original", imgCapture); //show the original image
 
 		if (waitKey(1) == 27)

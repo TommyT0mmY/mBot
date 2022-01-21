@@ -21,7 +21,7 @@
     <ClCompile Include="Field.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="Ball.cpp">
+    <ClCompile Include="BallDetector.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +29,10 @@
     <ClInclude Include="Field.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="Ball.h">
+    <ClInclude Include="BallDetector.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Detector.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>

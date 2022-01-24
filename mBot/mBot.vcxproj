@@ -151,16 +151,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BallDetector.cpp" />
-    <ClCompile Include="Field.cpp" />
+    <ClCompile Include="libs\include\BallDetector.cpp" />
+    <ClCompile Include="libs\include\Field.cpp" />
     <ClCompile Include="mBot.cpp" />
-    <ClCompile Include="PlayerDetector.cpp" />
+    <ClCompile Include="libs\include\PlayerDetector.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BallDetector.h" />
-    <ClInclude Include="Detector.h" />
-    <ClInclude Include="Field.h" />
-    <ClInclude Include="PlayerDetector.h" />
+    <ClInclude Include="libs\include\BallDetector.h" />
+    <ClInclude Include="libs\include\Detector.h" />
+    <ClInclude Include="libs\include\Field.h" />
+    <ClInclude Include="libs\include\PlayerDetector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

@@ -5,8 +5,9 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/objdetect.hpp>
 #include <iostream>
-#include "Field.h"
-#include "BallDetector.h"
+#include "libs/include/Field.h"
+#include "libs/include/BallDetector.h"
+#include "libs/include/PlayerDetector.h"
 
 using namespace cv;
 using namespace std;

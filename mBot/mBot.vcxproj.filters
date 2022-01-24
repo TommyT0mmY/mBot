@@ -18,27 +18,27 @@
     <ClCompile Include="mBot.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="Field.cpp">
+    <ClCompile Include="libs\include\Field.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="BallDetector.cpp">
+    <ClCompile Include="libs\include\BallDetector.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
-    <ClCompile Include="PlayerDetector.cpp">
+    <ClCompile Include="libs\include\PlayerDetector.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Field.h">
+    <ClInclude Include="libs\include\Field.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="BallDetector.h">
+    <ClInclude Include="libs\include\BallDetector.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="Detector.h">
+    <ClInclude Include="libs\include\Detector.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
-    <ClInclude Include="PlayerDetector.h">
+    <ClInclude Include="libs\include\PlayerDetector.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
   </ItemGroup>

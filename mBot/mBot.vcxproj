@@ -154,11 +154,13 @@
     <ClCompile Include="BallDetector.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="mBot.cpp" />
+    <ClCompile Include="PlayerDetector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BallDetector.h" />
     <ClInclude Include="Detector.h" />
     <ClInclude Include="Field.h" />
+    <ClInclude Include="PlayerDetector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

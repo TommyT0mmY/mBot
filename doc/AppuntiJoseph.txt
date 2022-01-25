@@ -3,6 +3,8 @@
 		bin e include con quello che serve.
 
 2) provare a fare il clone del repository a fine giornata per vedere se compila (meglio se lo fa una persona diversa)
+   per ora usiamo questo repository, una volta organizzato vorrei usare quello ufficiale.
+   Mi servono i permessi per accedere al repository di Tommy
 
 3) ok partire con il c++ ma in futuro è più comodo fare l'interfaccia in c#
    fare in c++ tre progetti
@@ -10,8 +12,11 @@
    b) codice con il calcolo
    c) interfaccia 
 
-4) primo modulo quello di avere coordinate dall'immagine
-5) secondo modulo acquisire sia da immagine che da telecamera (concetto di interfaccia)
+Modulo scena
+vedi LibeDraw e in più
+    requisiti:
+		acquisire sia da immagine che da telecamera (concetto di interfaccia)
+		
    
    
 A scuola con Alessia
@@ -19,5 +24,12 @@ A scuola con Alessia
    venerdi 9-11
 -----------------
 incontri di mercoledì 16-17
+-----------
+RANZI, ALESSIA - Organiser
 
+YURI CERE' (4ATL)
+TOMMASO GONI (4ATL)
+CLAUDIO LODI (4ATL)
+EMANUELE RICCI LUCCHI (4ATL)
+DAVIDE SORTINO (4ATL)
    

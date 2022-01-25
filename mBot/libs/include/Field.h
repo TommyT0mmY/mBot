@@ -1,6 +1,7 @@
 #pragma once
 
-#include "Ball.h"
+#include "BallDetector.h"
+#include "Detector.h"
 #include <opencv2/core/core.hpp>
 
 /// <summary>
@@ -37,7 +38,15 @@ private:
 	/// </summary>
 	cv::Mat projectionMatrix;
 
-	Ball ball;
+	std::vector<IDetector*> detectors;
+
+public:
+
+	/// <summary>
+	/// Add the detector to the List of the Detectors
+	/// </summary>
+	/// <param name="detector">the Detector to add</param>
+	void addDetector(IDetector* detector);
 
 
 	/// <summary>
@@ -51,4 +60,11 @@ private:
 	/// Normalizes the videocapture using <see cref="projectionMatrix", outputs the normalized image to <see cref="fieldImage">
 	/// </summary>
 	void normalizeField();
+
+	/// <summary>
+	/// 
+	/// </summary>
+	void update();
+
+
 };

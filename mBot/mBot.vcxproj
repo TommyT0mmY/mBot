@@ -147,17 +147,20 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opencv_world454d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opencv_world454d.lib;opencv_world454.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Ball.cpp" />
-    <ClCompile Include="Field.cpp" />
+    <ClCompile Include="libs\include\BallDetector.cpp" />
+    <ClCompile Include="libs\include\Field.cpp" />
     <ClCompile Include="mBot.cpp" />
+    <ClCompile Include="libs\include\PlayerDetector.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Ball.h" />
-    <ClInclude Include="Field.h" />
+    <ClInclude Include="libs\include\BallDetector.h" />
+    <ClInclude Include="libs\include\Detector.h" />
+    <ClInclude Include="libs\include\Field.h" />
+    <ClInclude Include="libs\include\PlayerDetector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

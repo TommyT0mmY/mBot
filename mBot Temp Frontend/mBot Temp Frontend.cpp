@@ -3,8 +3,15 @@
 
 #include "pch.h"
 #include "framework.h"
+#include "mBot Temp Frontend.h"
 
-// TODO: This is an example of a library function
-void fnmBotTempFrontEnd()
-{
+#include <iostream>
+
+Frontend::Frontend() {
+	std::cout << "frontend constructor call\n";
 }
+
+void Frontend::update(DataTransfer data) {
+	std::cout << "frontend update call\n";
+}
+

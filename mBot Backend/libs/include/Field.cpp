@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Field.h"
-#include "..\..\pch.h
 
 void Field::addDetector(IDetector* detector)
 {

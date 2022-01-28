@@ -1,3 +1,5 @@
+#pragma once
+
 #include "Field.h"
 
 void Field::addDetector(IDetector* detector)

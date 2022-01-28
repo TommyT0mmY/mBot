@@ -19,10 +19,10 @@ private:
 	/// Four <see cref="cv::Point"/>
 	/// </summary>
 	struct PointsData {
-		cv::Point p1; // top left
-		cv::Point p2; // top right
-		cv::Point p3; // bottom left
-		cv::Point p4; // bottom right
+		cv::Point2f p1; // top left
+		cv::Point2f p2; // top right
+		cv::Point2f p3; // bottom left
+		cv::Point2f p4; // bottom right
 	};
 
 

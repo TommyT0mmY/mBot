@@ -1,6 +1,5 @@
 #include "BallDetector.h"
 
-void BallDetector::update(cv::Mat& fieldImage)
-{
+void BallDetector::update(cv::Mat& fieldImage) {
 
 }

@@ -2,13 +2,11 @@
 
 #include "Field.h"
 
-void Field::addDetector(IDetector* detector)
-{
+void Field::addDetector(IDetector* detector) {
 	detectors.push_back(detector);
 }
 
-void Field::update()
-{
+void Field::update() {
 
 	// TODO call normalize field etc.
 

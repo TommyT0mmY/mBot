@@ -1,6 +1,5 @@
 #pragma once
 
-#include "BallDetector.h"
 #include "Detector.h"
 #include <opencv2/core/core.hpp>
 
@@ -61,10 +60,9 @@ public:
 	/// </summary>
 	void normalizeField();
 
+
 	/// <summary>
-	/// 
+	/// Updates every detector attached to the field and calls <see cref="normalizeField()">
 	/// </summary>
 	void update();
-
-
 };

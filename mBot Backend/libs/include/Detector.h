@@ -2,8 +2,7 @@
 
 #include <opencv2/core.hpp>
 
-class IDetector
-{
+class IDetector {
 public:
 	virtual void update(cv::Mat &fieldImage) = 0;
 };

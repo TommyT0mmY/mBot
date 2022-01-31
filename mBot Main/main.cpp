@@ -4,24 +4,22 @@
 #include "..\mBot Temp Frontend\mBot Temp Frontend.h"
 
 int main() {
-
 	std::cout << "hello world\n";
 
 	Backend backend;
-
 	Frontend frontend;
 
 	auto start = std::chrono::high_resolution_clock::now();
 	auto end = std::chrono::high_resolution_clock::now();
 
-	std::chrono::nanoseconds Counter(0);
-	std::chrono::nanoseconds NanosecondsPerFrame((int)(1.f / (float)60 * 1e9));
+	std::chrono::nanoseconds counter(0);
+	std::chrono::nanoseconds nanosecondsPerFrame((int)(1.f / (float)60 * 1e9));
 
-	while (1) {
+	while (true) {
 		start = std::chrono::high_resolution_clock::now();
 
-		if (Counter >= NanosecondsPerFrame) {
-			Counter = std::chrono::nanoseconds(0);
+		if (counter >= nanosecondsPerFrame) {
+			counter = std::chrono::nanoseconds(0);
 
 			DataTransfer data = backend.update();
 			frontend.update(data);
@@ -29,7 +27,7 @@ int main() {
 
 		end = std::chrono::high_resolution_clock::now();
 
-		Counter += end - start;
+		counter += end - start;
 	}
 
 	std::cout << "end\n";

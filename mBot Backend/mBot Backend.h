@@ -6,7 +6,7 @@
 
 struct DataTransfer {
 	//data
-	PointsData field;
+	//PointsData field;
 };
 
 class Backend {

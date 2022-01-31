@@ -12,8 +12,15 @@ int main() {
 	auto start = std::chrono::high_resolution_clock::now();
 	auto end = std::chrono::high_resolution_clock::now();
 
+<<<<<<< HEAD
 	std::chrono::nanoseconds counter(0);
 	std::chrono::nanoseconds nanosecondsPerFrame((int)(1.f / (float)60 * 1e9));
+=======
+	float targetFrameRate = 30;
+
+	std::chrono::nanoseconds Counter(0);
+	std::chrono::nanoseconds NanosecondsPerFrame((int)(1.f / (float)targetFrameRate * 1e9));
+>>>>>>> d649aff9a2b58cf553b409d6f4c49a54bc81948d
 
 	while (true) {
 		start = std::chrono::high_resolution_clock::now();

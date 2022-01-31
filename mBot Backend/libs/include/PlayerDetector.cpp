@@ -1,5 +1,5 @@
 #include "PlayerDetector.h"
 
-void PlayerDetector::update() {
+void PlayerDetector::update(cv::Mat &fieldImage) {
 
 }

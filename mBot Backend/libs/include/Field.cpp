@@ -6,6 +6,10 @@ void Field::addDetector(IDetector* detector) {
 	detectors.push_back(detector);
 }
 
+void Field::initFieldNormalization() {
+
+}
+
 void Field::normalizeField() {
 
 }

@@ -7,14 +7,11 @@
 /// Handles the game field
 /// </summary>
 class Field {
-protected:
-	/// <summary>
-	/// Normalized image of the field
-	/// Normalized using <see cref="projectionMatrix"/>
-	/// </summary>
-	cv::Mat fieldImage;
-
 private:
+	int normalizeWidth;
+	int normalizeHeight;
+
+
 	/// <summary>
 	/// Four <see cref="cv::Point"/>
 	/// </summary>
@@ -27,16 +24,34 @@ private:
 
 
 	/// <summary>
+	/// Pointer to the raw video capture image
+	/// </summary>
+	cv::Mat* rawFieldImage_p;
+
+
+	/// <summary>
+	/// Normalized image of the field
+	/// Normalized using <see cref="projectionMatrix"/>
+	/// </summary>
+	cv::Mat normalizedFieldImage;
+	
+
+	/// <summary>
 	/// Holds the raw videocapture corner coordinates of the field
 	/// </summary>
 	PointsData rawCorners;
 
 
 	/// <summary>
-	/// Projection matrix to normalize the videocapture image
+	/// Projection matrix to normalize the videocapture image.
+	/// This matrix gets initialized by <see cref="Field::initFieldNormalization()"/>
 	/// </summary>
 	cv::Mat projectionMatrix;
 
+
+	/// <summary>
+	/// Detectors get updated from <see cref="Field::update()"/>
+	/// </summary>
 	std::vector<IDetector*> detectors;
 
 public:
@@ -51,8 +66,7 @@ public:
 	/// <summary>
 	/// Detects the four corners of the Field and saves to <see cref="Field::rawCorners"/>, when all the corners are detected 
 	/// </summary>
-	/// <param name="img">Raw image capture</param>
-	void initFieldNormalization(cv::Mat& img);
+	void initFieldNormalization();
 
 
 	/// <summary>

@@ -36,3 +36,7 @@ DAVIDE SORTINO (4ATL)
 
 
 ------Inserire tra i requisiti anche il tool di VS progettazioni Classi 
+
+Raccomandazioni:
+Il martedì mattina il codice deve compilare.
+L'interfaccia non deve dipendere dalle opencv. Quindi i dati devono essere semplici.

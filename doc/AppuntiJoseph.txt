@@ -33,3 +33,6 @@ CLAUDIO LODI (4ATL)
 EMANUELE RICCI LUCCHI (4ATL)
 DAVIDE SORTINO (4ATL)
    
+
+
+------Inserire tra i requisiti anche il tool di VS progettazioni Classi 

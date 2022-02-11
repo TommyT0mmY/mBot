@@ -10,9 +10,4 @@
 // add headers that you want to pre-compile here
 #include "framework.h"
 
-#include "libs/include/BallDetector.h"
-#include "libs/include/Detector.h"
-#include "libs/include/Field.h"
-#include "libs/include/PlayerDetector.h"
-
 #endif //PCH_H

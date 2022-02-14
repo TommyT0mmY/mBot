@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BallDetector">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>libs\detectors\BallDetector.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ball" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IDetector">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>libs\detectors\Detector.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FieldDetector">
+    <Position X="11" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAACAAAAAAAAAAAQAAAAAAAAAAAgAAAgAEAAA=</HashCode>
+      <FileName>libs\detectors\FieldDetector.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="field" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerDetector">
+    <Position X="9" Y="2.25" Width="1.5" />
+    <AssociationLine Name="player" Type="Player">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.164" Y="0.044" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAAAAAAAEAAA=</HashCode>
+      <FileName>libs\detectors\PlayerDetector.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="player" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="Ball">
+    <Position X="4.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>libs\objects\Ball.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Field">
+    <Position X="4.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAJAGAAAAAAAAAAAAAABAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>libs\objects\Field.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Player">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAQAAAAAAAAAAEAAgA=</HashCode>
+      <FileName>libs\objects\Player.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

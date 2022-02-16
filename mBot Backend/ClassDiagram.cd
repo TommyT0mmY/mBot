@@ -18,7 +18,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="FieldDetector">
-    <Position X="11" Y="2.25" Width="1.5" />
+    <Position X="11" Y="2.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AACCAAAAACAAAAAAAAAAAQAAAAAAAAAAAgAAAgAEAAA=</HashCode>
       <FileName>libs\detectors\FieldDetector.h</FileName>
@@ -44,10 +44,18 @@
   </Class>
   <Struct Name="Ball">
     <Position X="4.75" Y="2.75" Width="1.5" />
+    <AssociationLine Name="position" Type="Point">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.068" Y="0.177" />
+      </MemberNameLabel>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>libs\objects\Ball.h</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="position" />
+    </ShowAsAssociation>
   </Struct>
   <Struct Name="Field">
     <Position X="4.75" Y="6.5" Width="1.5" />
@@ -55,12 +63,28 @@
       <HashCode>AAAAAJAGAAAAAAAAAAAAAABAAAAAAAAAAIAAAAAAAAA=</HashCode>
       <FileName>libs\objects\Field.h</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="realPoint1" />
+      <Field Name="realPoint4" />
+      <Field Name="realPoint3" />
+      <Field Name="realPoint2" />
+    </ShowAsAssociation>
   </Struct>
   <Struct Name="Player">
     <Position X="4.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAQAAAAAAAAAAEAAgA=</HashCode>
       <FileName>libs\objects\Player.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="position" />
+    </ShowAsAssociation>
+  </Struct>
+  <Struct Name="Point">
+    <Position X="1" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>libs\objects\Point.h</FileName>
     </TypeIdentifier>
   </Struct>
   <Font Name="Segoe UI" Size="9" />

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BallDetector">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>libs\detectors\BallDetector.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ball" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IDetector">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>libs\detectors\Detector.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FieldDetector">
+    <Position X="11" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAACAAAAAAAAAAAQAAAAAAAAAAAgAAAgAEAAA=</HashCode>
+      <FileName>libs\detectors\FieldDetector.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="field" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerDetector">
+    <Position X="9" Y="2.25" Width="1.5" />
+    <AssociationLine Name="player" Type="Player">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.164" Y="0.044" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAABAAAAAAAEAAA=</HashCode>
+      <FileName>libs\detectors\PlayerDetector.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="player" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="Ball">
+    <Position X="4.75" Y="2.75" Width="1.5" />
+    <AssociationLine Name="position" Type="Point">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.917" Y="1.217" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>libs\objects\Ball.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="position" />
+    </ShowAsAssociation>
+  </Struct>
+  <Struct Name="Field">
+    <Position X="4.75" Y="6.5" Width="1.5" />
+    <AssociationLine Name="realPoint1" Type="Point" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="7" />
+        <Point X="1.625" Y="7" />
+        <Point X="1.625" Y="5.796" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.83" Y="0.677" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="realPoint2" Type="Point" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="6.688" />
+        <Point X="1.93" Y="6.688" />
+        <Point X="1.93" Y="5.796" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.507" Y="0.953" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="realPoint3" Type="Point" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="7.625" />
+        <Point X="1" Y="7.625" />
+        <Point X="1" Y="5.796" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.437" Y="1.236" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="realPoint4" Type="Point" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="7.312" />
+        <Point X="1.312" Y="7.312" />
+        <Point X="1.312" Y="5.796" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-2.114" Y="1.622" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAJAGAAAAAAAAAAAAAABAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>libs\objects\Field.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="realPoint1" />
+      <Field Name="realPoint2" />
+      <Field Name="realPoint3" />
+      <Field Name="realPoint4" />
+    </ShowAsAssociation>
+  </Struct>
+  <Struct Name="Player">
+    <Position X="4.75" Y="4.5" Width="1.5" />
+    <AssociationLine Name="position" Type="Point">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.911" Y="0.015" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAQAAAAAAAAAAEAAgA=</HashCode>
+      <FileName>libs\objects\Player.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="position" />
+    </ShowAsAssociation>
+  </Struct>
+  <Struct Name="Point">
+    <Position X="0.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>libs\objects\Point.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

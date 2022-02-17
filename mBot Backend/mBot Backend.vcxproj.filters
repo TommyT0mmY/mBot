@@ -67,6 +67,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagramExample.cd" />
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

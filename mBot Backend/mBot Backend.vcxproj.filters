@@ -48,6 +48,9 @@
     <ClInclude Include="libs\objects\Point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="libs\objects\ImageTransfer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mBot Backend.cpp">

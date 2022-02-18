@@ -161,6 +161,7 @@
     <ClInclude Include="libs\detectors\PlayerDetector.h" />
     <ClInclude Include="libs\objects\Ball.h" />
     <ClInclude Include="libs\objects\Field.h" />
+    <ClInclude Include="libs\objects\ImageTransfer.h" />
     <ClInclude Include="libs\objects\Player.h" />
     <ClInclude Include="libs\objects\Point.h" />
     <ClInclude Include="mBot Backend.h" />

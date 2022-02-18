@@ -3,6 +3,8 @@
 #include "Point.h"
 
 struct Ball {
-    Point position;
+    Point realPosition;
+    Point normPosition;
+
     float radius;
 };

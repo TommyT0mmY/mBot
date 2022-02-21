@@ -13,9 +13,6 @@ struct Field {
     Point normPoint3; // bottom left
     Point normPoint4; // bottom right
 
-    float realHeight;
-    float realWidth;
-
-    float normHeight;
-    float normWidth;
+    float height;
+    float width;
 };

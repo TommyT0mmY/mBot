@@ -13,9 +13,6 @@ private:
 
     cv::VideoCapture videoCapture;
     cv::Mat* image = nullptr;
-    
-    std::string filename = "";
-    int cameraId = 0;
 
     void update();
 public:

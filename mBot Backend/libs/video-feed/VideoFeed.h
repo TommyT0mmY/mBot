@@ -5,22 +5,26 @@
 #include <opencv2/videoio.hpp>
 
 class VideoFeed {
-public: enum SourceType { DISK_VIDEO, DISK_IMAGE_SEQUENCE, DISK_IMAGE, CAMERA };
-
+//public:
+//    enum class SourceType { DISK_VIDEO, DISK_IMAGE_SEQUENCE, DISK_IMAGE, CAMERA };
+//
 private:
     const int apiPreference = cv::CAP_ANY;
 
+    cv::VideoCapture videoCapture;
     cv::Mat* image = nullptr;
-    SourceType sourceType;
-    std::string path = "";
+    
+    std::string filename = "";
+    int cameraId = 0;
 
-
-public:
     void update();
-
+public:
     cv::Mat* getImage();
 
-    VideoFeed();
+    cv::Mat* nextImage();
+
+    VideoFeed(std::string filename);
+    VideoFeed(int cameraId);
 
     ~VideoFeed();
 };

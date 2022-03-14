@@ -163,6 +163,7 @@
     <ClInclude Include="libs\objects\Field.h" />
     <ClInclude Include="libs\objects\Player.h" />
     <ClInclude Include="libs\objects\Point.h" />
+    <ClInclude Include="libs\video-feed\VideoFeed.h" />
     <ClInclude Include="mBot Backend.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
@@ -170,6 +171,7 @@
     <ClCompile Include="libs\detectors\BallDetector.cpp" />
     <ClCompile Include="libs\detectors\FieldDetector.cpp" />
     <ClCompile Include="libs\detectors\PlayerDetector.cpp" />
+    <ClCompile Include="libs\video-feed\VideoFeed.cpp" />
     <ClCompile Include="mBot Backend.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

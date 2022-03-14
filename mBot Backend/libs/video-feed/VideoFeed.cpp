@@ -16,6 +16,7 @@ cv::Mat* VideoFeed::nextImage() {
 }
 
 VideoFeed::VideoFeed(std::string filename) {
+    image = new cv::Mat;
     videoCapture = cv::VideoCapture(filename, apiPreference);
     update(); // sets to first image
 }

@@ -1,5 +1,9 @@
 #pragma once
 #include "libs/video-feed/VideoFeed.h"
+#include "libs/ImageNormalizer.h"
+#include "libs/detectors/FieldDetector.h"
+#include "libs/detectors/BallDetector.h"
+#include "libs/detectors/PlayerDetector.h"
 
 struct DataTransfer {
 	//cv::Mat* image;
@@ -7,9 +11,14 @@ struct DataTransfer {
 
 class Backend {
 public:
-	Backend();
+	Backend(VideoFeed _videoFeed, ImageNormalizer _imageNormalizer);
 
 	DataTransfer update();
-	VideoFeed videoFeed = VideoFeed("C:/Users/studente\\source\\repos\\mBot/Immagini/CampoCalcio1300x800_A1.jpg");
+	VideoFeed videoFeed;
+	ImageNormalizer imageNormalizer;
+
+	FieldDetector fieldDetector;
+	BallDetector ballDetector;
+	PlayerDetector playerDetector;
 private:
 };

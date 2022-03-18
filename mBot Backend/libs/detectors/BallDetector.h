@@ -4,12 +4,21 @@
 #include "../objects/Ball.h"
 
 class BallDetector : public IDetector {
-private:
-	Ball ball;
-
 public:
 	void update(cv::Mat& normalizedFieldImage);
 
-
+	
 	Ball getBall();
+private:
+	void searchBall();
+
+	Ball ball;
+
+	int lowH;
+	int lowS;
+	int lowV;
+
+	int highH;
+	int highS;
+	int highV;
 };

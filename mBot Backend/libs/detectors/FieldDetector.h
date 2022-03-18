@@ -10,7 +10,7 @@ private:
 	Field field;
 
 public:
-	void update();
+	void update(cv::Mat& image);
 
 	Field getField();
 };

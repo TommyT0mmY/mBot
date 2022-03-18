@@ -5,7 +5,7 @@
 
 class BallDetector : public IDetector {
 public:
-	void update(cv::Mat& normalizedFieldImage);
+	void update(cv::Mat& image);
 
 	
 	Ball getBall();

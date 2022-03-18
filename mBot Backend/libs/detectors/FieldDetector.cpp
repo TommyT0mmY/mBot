@@ -2,7 +2,7 @@
 
 #include "FieldDetector.h"
 
-void FieldDetector::update() {
+void FieldDetector::update(cv::Mat& image) {
 
 }
 

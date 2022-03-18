@@ -4,5 +4,5 @@
 
 class IDetector {
 public:
-	virtual void update(cv::Mat &fieldImage) = 0;
+	virtual void update(cv::Mat &image) = 0;
 };

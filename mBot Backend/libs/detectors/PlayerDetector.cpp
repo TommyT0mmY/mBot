@@ -1,6 +1,6 @@
 #include "PlayerDetector.h"
 
-void PlayerDetector::update(cv::Mat& normalizedFieldImage) {
+void PlayerDetector::update(cv::Mat& image) {
 
 }
 

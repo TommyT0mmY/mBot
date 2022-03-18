@@ -4,8 +4,12 @@
 #include <string>
 
 struct Player {
-    Point position;
+    Point realPosition;
+    Point normPosition;
+
     float radRotation;
+
     int id;
+
     std::string team;
 };

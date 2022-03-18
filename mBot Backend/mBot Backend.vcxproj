@@ -155,12 +155,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="libs\ImageNormalizer.h" />
     <ClInclude Include="libs\detectors\BallDetector.h" />
     <ClInclude Include="libs\detectors\Detector.h" />
     <ClInclude Include="libs\detectors\FieldDetector.h" />
     <ClInclude Include="libs\detectors\PlayerDetector.h" />
     <ClInclude Include="libs\objects\Ball.h" />
     <ClInclude Include="libs\objects\Field.h" />
+    <ClInclude Include="libs\objects\ImageTransfer.h" />
     <ClInclude Include="libs\objects\Player.h" />
     <ClInclude Include="libs\objects\Point.h" />
     <ClInclude Include="libs\video-feed\VideoFeed.h" />
@@ -168,6 +170,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="libs\ImageNormalizer.cpp" />
     <ClCompile Include="libs\detectors\BallDetector.cpp" />
     <ClCompile Include="libs\detectors\FieldDetector.cpp" />
     <ClCompile Include="libs\detectors\PlayerDetector.cpp" />

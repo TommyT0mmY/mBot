@@ -51,6 +51,12 @@
     <ClInclude Include="libs\video-feed\VideoFeed.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="libs\objects\ImageTransfer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\ImageNormalizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mBot Backend.cpp">
@@ -69,6 +75,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="libs\video-feed\VideoFeed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\ImageNormalizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

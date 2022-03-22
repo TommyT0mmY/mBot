@@ -11,7 +11,7 @@ struct DataTransfer {
 
 class Backend {
 public:
-	Backend(VideoFeed _videoFeed, ImageNormalizer _imageNormalizer);
+	Backend(VideoFeed _videoFeed);
 
 	DataTransfer update();
 	VideoFeed videoFeed;

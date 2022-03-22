@@ -10,14 +10,13 @@
 
 
 
-Backend::Backend(VideoFeed _videoFeed, ImageNormalizer _imageNormalizer)
-	: videoFeed(_videoFeed),imageNormalizer(_imageNormalizer)
+Backend::Backend(VideoFeed _videoFeed) : videoFeed(_videoFeed)
 {
 	std::cout << "backend constructor call\n";
 }
 
 DataTransfer Backend::update() {
-	std::cout << "backend update call\n";
+	//std::cout << "backend update call\n";
 
 	//prendo l'immagine
 	cv::Mat* rawImage = videoFeed.nextImage();

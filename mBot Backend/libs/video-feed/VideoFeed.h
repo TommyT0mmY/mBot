@@ -12,7 +12,7 @@ private:
     const int apiPreference = cv::CAP_ANY;
 
     cv::VideoCapture videoCapture;
-    cv::Mat* image = nullptr;
+    cv::Mat image;
 
     void update();
 public:

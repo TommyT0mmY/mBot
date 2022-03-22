@@ -1,13 +1,15 @@
 #include "VideoFeed.h"
 
+#include <iostream>
+
 void VideoFeed::update() {
-    videoCapture.grab();
-    bool result = videoCapture.retrieve(*image);
-    if (!result) image = nullptr;
+    //bool result = videoCapture.retrieve(*image);
+    bool result = videoCapture.read(image);
+    if (!result) image.empty();
 }
 
 cv::Mat* VideoFeed::getImage() {
-    return image;
+    return &image;
 }
 
 cv::Mat* VideoFeed::nextImage() {
@@ -16,17 +18,20 @@ cv::Mat* VideoFeed::nextImage() {
 }
 
 VideoFeed::VideoFeed(std::string filename) {
-    image = new cv::Mat;
+    image.empty();
+
+    std::cout << image << std::endl;
     videoCapture = cv::VideoCapture(filename, apiPreference);
     update(); // sets to first image
 }
 
 VideoFeed::VideoFeed(int cameraId) {
-    image = new cv::Mat;
+    image.empty();
+    std::cout << image << std::endl;
     videoCapture = cv::VideoCapture(cameraId, apiPreference);
     update(); // sets to first image
 }
 
 VideoFeed::~VideoFeed() {
-    delete image;
+    //delete image;
 }

@@ -12,6 +12,6 @@ Frontend::Frontend() {
 }
 
 void Frontend::update(DataTransfer data) {
-	std::cout << "frontend update call\n";
+	//std::cout << "frontend update call\n";
 }
 

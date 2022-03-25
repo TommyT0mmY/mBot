@@ -8,7 +8,8 @@
 int main() {
 	std::cout << "hello world\n";
 
-	//utilizzare 0 per la webca mdi default o usare un una stringa con un path per usare i file(non è ancora testato bene potrebbe dare problemi)
+	//utilizzare 0 per la webca mdi default o usare un una stringa con un path per usare i file
+	//(non è ancora testato bene potrebbe dare problemi)
 	VideoFeed videoFeed(0);
 
 	Backend backend(videoFeed);

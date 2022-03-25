@@ -43,12 +43,11 @@ DataTransfer Backend::update() {
 
 	cv::Mat normalizerImage = imageNormalizer.getNormalizedImage();
 
+	ballDetector.update(*rawImage);
+
 	DataTransfer result;
 
 	//result.image = videoFeed.nextImage();
-
-	cv::imshow("Test", *videoFeed.getImage());
-	cv::pollKey();
 
 	return result;
 }

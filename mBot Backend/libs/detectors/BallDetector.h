@@ -12,18 +12,16 @@ public:
 	
 	Ball getBall();
 private:
-	void searchBall();
-
 	cv::Ptr<cv::SimpleBlobDetector> detector;
 
 	Ball ball;
 
 	// TODO range
-	int lowH = 20;
-	int lowS = 80;
-	int lowV = 80;
+	int lowH = 1;
+	int lowS = 59;
+	int lowV = 172;
 
-	int highH = 60;
-	int highS = 100;
-	int highV = 100;
+	int highH = 13;
+	int highS = 160;
+	int highV = 255;
 };

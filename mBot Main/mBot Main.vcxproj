@@ -24,6 +24,7 @@
     <ProjectGuid>{1838e10b-6140-495c-94ac-1575af765331}</ProjectGuid>
     <RootNamespace>mBotMain</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Main</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

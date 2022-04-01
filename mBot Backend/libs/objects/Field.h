@@ -3,15 +3,15 @@
 #include "Point.h"
 
 struct Field {
-    Point realPoint1; // top left
-    Point realPoint2; // top right
-    Point realPoint3; // bottom left
-    Point realPoint4; // bottom right
+    Point realTopLeft;
+    Point realTopRight;
+    Point realBottomLeft;
+    Point realBottomRight;
 
-    Point normPoint1; // top left
-    Point normPoint2; // top right
-    Point normPoint3; // bottom left
-    Point normPoint4; // bottom right
+    Point normTopLeft;
+    Point normTopRight;
+    Point normBottomLeft;
+    Point normBottomRight;
 
     float height;
     float width;

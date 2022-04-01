@@ -29,10 +29,10 @@ DataTransfer Backend::update() {
 
 	//schifo
 	cv::Point2f src[] = {
-		{field.realPoint1.x,field.realPoint1.y},
-		{field.realPoint2.x,field.realPoint2.y},
-		{field.realPoint3.x,field.realPoint3.y},
-		{field.realPoint4.x,field.realPoint4.y},
+		{field.realTopLeft.x,field.realTopLeft.y},
+		{field.realTopRight.x,field.realTopRight.y},
+		{field.realBottomLeft.x,field.realBottomLeft.y},
+		{field.realBottomRight.x,field.realBottomRight.y},
 	};
 
 	imageNormalizer.setRawImage(rawImage);

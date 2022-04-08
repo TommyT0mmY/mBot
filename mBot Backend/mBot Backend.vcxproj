@@ -155,6 +155,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="libs\external\aruco\include\opencv2\aruco.hpp" />
+    <ClInclude Include="libs\external\aruco\include\opencv2\aruco\dictionary.hpp" />
+    <ClInclude Include="libs\external\aruco\src\apriltag_quad_thresh.hpp" />
+    <ClInclude Include="libs\external\aruco\src\precomp.hpp" />
+    <ClInclude Include="libs\external\aruco\src\predefined_dictionaries.hpp" />
+    <ClInclude Include="libs\external\aruco\src\predefined_dictionaries_apriltag.hpp" />
+    <ClInclude Include="libs\external\aruco\src\unionfind.hpp" />
+    <ClInclude Include="libs\external\aruco\src\zarray.hpp" />
+    <ClInclude Include="libs\external\aruco\src\zmaxheap.hpp" />
     <ClInclude Include="libs\external\aruco_nano.h" />
     <ClInclude Include="libs\ImageNormalizer.h" />
     <ClInclude Include="libs\detectors\BallDetector.h" />
@@ -171,6 +180,10 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="libs\external\aruco\src\apriltag_quad_thresh.cpp" />
+    <ClCompile Include="libs\external\aruco\src\aruco.cpp" />
+    <ClCompile Include="libs\external\aruco\src\dictionary.cpp" />
+    <ClCompile Include="libs\external\aruco\src\zmaxheap.cpp" />
     <ClCompile Include="libs\ImageNormalizer.cpp" />
     <ClCompile Include="libs\detectors\BallDetector.cpp" />
     <ClCompile Include="libs\detectors\FieldDetector.cpp" />

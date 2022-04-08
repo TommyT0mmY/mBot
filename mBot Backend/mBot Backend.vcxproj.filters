@@ -60,6 +60,33 @@
     <ClInclude Include="libs\external\aruco_nano.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="libs\external\aruco\include\opencv2\aruco.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\external\aruco\include\opencv2\aruco\dictionary.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\external\aruco\src\apriltag_quad_thresh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\external\aruco\src\precomp.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\external\aruco\src\predefined_dictionaries.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\external\aruco\src\predefined_dictionaries_apriltag.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\external\aruco\src\unionfind.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\external\aruco\src\zarray.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\external\aruco\src\zmaxheap.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mBot Backend.cpp">
@@ -81,6 +108,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="libs\ImageNormalizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\external\aruco\src\apriltag_quad_thresh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\external\aruco\src\aruco.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\external\aruco\src\dictionary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\external\aruco\src\zmaxheap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

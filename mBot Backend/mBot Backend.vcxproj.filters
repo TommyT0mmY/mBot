@@ -57,6 +57,9 @@
     <ClInclude Include="libs\ImageNormalizer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="libs\external\aruco_nano.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mBot Backend.cpp">
